@@ -1,0 +1,124 @@
+<!-- ///////////////////////////
+       EJERCICIO 3 (HTML)
+/////////////////////////// -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ENLACE A CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/styleForm.css">
+  <title>Ejercicio 3</title>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header>
+    <!-- TITULO -->
+    <h1>JavaScript</h1>
+    
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="../img/html.png" alt="">
+      <img src="../img/css.png" alt="">
+      <img src="../img/js.png" alt="">
+    </div>
+    <!-- NAVBOTON -->
+    <button id="navBoton"><img class="imgBoton" src="../img/botonNav.png" alt=""></button>
+  </header>
+  
+  <!-- MAIN -->
+  <main>
+    
+    <!-- NAV -->
+    <nav id="navMenu" class="">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="ejercicio1.html">Ejercicio 1</a></li>
+        <li><a href="ejercicio2.html">Ejercicio 2</a></li>
+        <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+        <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+      </ul>
+    </nav>
+    
+    <!-- SECTION -->
+    <section>
+      <article>
+        <h2>Ejercicio #3: Validación de Datos</h2>
+        <h3>(ComboBox, CheckBox, RadioButton)</h3>
+        <br>        
+        <!-- FORM -->
+        <form>
+          <!-- NOMBRE -->
+          <label for="">Nombre <span>*</span></label>
+          <input id="tbNombre" type="text" placeholder="Introducir el nombre..." required maxlength="20">
+          <!-- APELLIDO PATERNO -->
+          <label for="">Apellido Paterno <span>*</span></label>
+          <input id="tbAPaterno" type="text" placeholder="Introducir el Ape. Paterno..." required maxlength="20">
+          <!-- APELLIDO MATERNO -->
+          <label for="">Apellido Materno <span>*</span></label>
+          <input id="tbAMaterno" type="text" placeholder="Introducir el Ape. Materno..." required maxlength="20">
+          <!-- SEXO -->
+          <fieldset>
+            <legend>Sexo</legend>
+            <label for="">Masculino</label><input class="rBoton" type="radio" name="rbSexo" required>
+            <label for="">Femenino</label><input class="rBoton" type="radio" name="rbSexo" required>
+          </fieldset>
+          <!-- DEPARTAMENTO -->
+          <label>Departamento</label>
+          <select name="" id="" required>
+            <option value="">Elija un Departamento...</option>
+            <option value="1">Pando</option>
+            <option value="2">Beni</option>
+            <option value="3">La Paz</option>
+            <option value="4">Cochabamba</option>
+            <option value="5">Santa Cruz</option>
+            <option value="6">Oruro</option>
+            <option value="7">Potosí</option>
+            <option value="8">Chuquisca</option>
+            <option value="9">Tarija</option>
+          </select>
+          <!-- FECHA -->
+          <label>Fecha<span>*</span></label>
+          <input id="tbFono" type="date" required>           
+          <!-- FONO -->
+          <label for="">Fono <span>*</span></label>
+          <input id="tbFono" type="number" placeholder="Introducir el Fono..." required min="10000000" max="99999999">
+          <!-- EMAIL -->
+          <label for="">Email <span>*</span></label>
+          <input id="tbEmail" type="email" placeholder="Introducir el email..." required>
+          <!-- CONTRASEÑA -->
+          <label for="">Password <span>*</span></label>
+          <input id="tbPassword" type="password" placeholder="Password..." required>
+          <!-- CHECK -->
+          <div class="aceptarTerminos">              
+            <input id="tbEmail" type="checkbox" required class="chbAceptar">&nbsp;&nbsp;
+            <label> Aceptar todos los Terminos<span>*</span></label>
+          </div>          
+          <!-- BOTON -->
+          <button id="bCalcular">Registrar</button>
+        </form>
+        
+      </article>
+    </section>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer>
+    <!-- REDES SOCIALES -->
+    <div class="redesSociales">
+      <img src="../img/icono1.jpg" alt="">
+      <img src="../img/icono2.jpg" alt="">
+      <img src="../img/icono3.jpg" alt="">
+      <img src="../img/icono4.jpg" alt="">
+    </div>
+    <!-- DERECHOS DEL AUTOR -->
+    <div class="derechosAutos">
+     JR &copy; 2026
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>  
+</body>
+</html>
